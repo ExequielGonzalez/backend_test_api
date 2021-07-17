@@ -17,20 +17,7 @@ async function fetchText() {
 }
 
 function toBase64(arr) {
-  //arr = new Uint8Array(arr) if it's an ArrayBuffer
   return btoa(arr.reduce((data, byte) => data + String.fromCharCode(byte), ""));
 }
 
 fetchText();
-
-// function toBase64(arr) {
-//   //arr = new Uint8Array(arr) if it's an ArrayBuffer
-//   return btoa(arr.reduce((data, byte) => data + String.fromCharCode(byte), ""));
-// }
-
-// $("#two").prepend(
-//   $("<img>", {
-//     id: "theImg2",
-//     src: `data:image/png;base64,${toBase64(selected[0].image2.data)}`,
-//   })
-// );
